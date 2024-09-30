@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Profile Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url("images/backg.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .kenji {
+            text-align: center;
+            width: 300px; /* Slightly wider for a better look */
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9); /* Brighter background */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .kenji:hover {
+            transform: translateY(-5px); /* Elevate effect on hover */
+            box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
+        }
+        .pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #4CAF50; /* Brighter border */
+        }
+        p {
+            color: #333; /* Darker text for better contrast */
+            margin: 10px 0; /* Better spacing */
+        }
+        h1 {
+            color: #4CAF50; /* Brighter header color */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="kenji">
+            <header class="pic" id="lpiv">
+                <h1>My Profile Page</h1>
+                <img src="kenji.jpg" alt="Profile Picture">
+            </header>
+            <p><b>Name:</b> Kenji S. Lugatiman</p>
+            <p><b>Gender:</b> Male</p>
+            <p><b>Birthdate:</b> October 16, 2003</p>
+            <p><b>Age:</b> 20 Years Old</p>
+            <p><b>Address:</b> 987 Tindalo Street, Mati City, Davao Oriental</p>
+            <p><b>Contact:</b> 09948854912</p>
+        </div>
+    </div>
+</body>
+</html>
